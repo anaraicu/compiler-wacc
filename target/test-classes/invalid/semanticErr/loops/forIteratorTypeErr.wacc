@@ -1,0 +1,15 @@
+# iterator must be of type Int
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  for (char i = 0; i < 1; i = 2) 
+    println i
+  done
+end

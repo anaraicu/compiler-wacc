@@ -1,0 +1,16 @@
+# evaluating multiple bitwise operations
+
+# Output:
+# -9
+# 7
+
+# Program:
+
+begin
+  int a = 3 ;
+  int b = 6 ;
+  int c = 10;
+  int d = 2;
+  println a & b | c ^ ~d;
+  println b & ~c ^ a | d
+end

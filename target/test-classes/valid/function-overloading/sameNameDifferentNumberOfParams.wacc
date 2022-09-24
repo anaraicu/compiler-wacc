@@ -1,0 +1,20 @@
+# Output:
+# The first 20 fibonacci numbers are:
+
+# Program:
+
+begin
+  int f(int x) is
+    return x
+  end
+
+  int f(int a, int b) is
+    return a+b
+  end
+
+  int x = call f(1);
+  int c = call f(2,3);
+  println x;
+  println c
+end
+

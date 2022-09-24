@@ -1,0 +1,29 @@
+# do-while loop with break and continue
+
+# Output: 
+# 0
+# 1 
+# 6
+# 3
+
+# Program:
+
+begin
+  int a = 0;
+  int x = 0;
+  do
+    println a;
+    a = a + 1;
+    x = x + 1;
+    if (a == 2) then
+        int y = x + 3;
+        println y;
+        break
+    else
+        x = x + 1;
+        continue
+    fi;
+    x = x + 1000
+  while a < 100 done;
+  println x
+end

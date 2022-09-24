@@ -1,0 +1,15 @@
+# a simple function is declared, but not called
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  int f() is
+    return 12 
+  end
+  int x = call f();
+  println x;
+  skip
+end

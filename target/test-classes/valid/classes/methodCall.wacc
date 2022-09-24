@@ -1,0 +1,18 @@
+# getter and field access of public field are the same
+
+# Output:
+# true
+
+# Program:
+
+begin
+  class Object begin
+    public int x = 5;
+    public int getX() is
+      return x
+    end
+  end
+  Object a = new Object();
+  int x = call a.getX();
+  println x == a.x
+end

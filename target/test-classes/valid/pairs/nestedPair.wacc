@@ -1,0 +1,31 @@
+# create a pair (int, pair (int, int) )
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(2, 3) ;
+  pair(int, pair) q = newpair(1, p);
+
+  # Added manual print for pair
+  print p;
+  print " = (" ;
+  int x = fst p ;
+  print x ;
+  print ", " ;
+  int y = snd p ;
+  print y ;
+  println ')' ;
+
+  # Added manual print for pair
+  print q;
+  print " = (" ;
+  x = fst q ;
+  print x ;
+  print ", " ;
+  p = snd q ;
+  print p ;
+  println ')' 
+end

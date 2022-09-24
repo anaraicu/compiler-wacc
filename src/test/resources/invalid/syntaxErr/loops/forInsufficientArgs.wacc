@@ -1,0 +1,15 @@
+# for must have all arguments
+
+# Output:
+# #syntaxError#
+
+# Exit:
+# 100
+
+# Program:
+
+begin
+  for (char i = 0; i < 1; ) do
+    println i
+  done
+end

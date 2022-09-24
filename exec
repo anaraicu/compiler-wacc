@@ -1,0 +1,26 @@
+#!/bin/bash
+mkdir array_output
+find src/test/resources/valid/array/ -iname "*.wacc" | \
+  while read I; do
+    echo | ./refCompile -x "$I" > test.txt
+    tmp=${I#src/test/resources/valid/array/*}
+    J=${tmp%.wacc*}
+    # echo $J.txt
+    cd array_output
+    echo -n "\"$J\"" >> hashmap.txt
+    # truncate -s -1 hashmap.txt
+    echo -n " to " >> hashmap.txt
+    # truncate -s -1 hashmap.txt
+    # output
+    echo -n "Pair(" >> hashmap.txt
+    echo -n "\"" >> hashmap.txt
+    sed -n '/=====/,/=====/{//!p}' ../test.txt >> hashmap.txt
+    truncate -s -1 hashmap.txt
+    echo -n "\", " >> hashmap.txt
+    # exit code
+    awk -n '/^The exit code is/{print $NF}' ../test.txt | awk '{print substr($0, 1, length($0)-1)}' >> hashmap.txt
+    truncate -s -1 hashmap.txt
+    echo -n ")" >> hashmap.txt
+    echo "," >> hashmap.txt
+    cd ..
+  done

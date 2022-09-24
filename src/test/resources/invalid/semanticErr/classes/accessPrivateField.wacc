@@ -1,0 +1,19 @@
+# tries to access private field
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  class A begin
+    private int x = 2;
+    
+  end
+  A a = new A();
+  a.x = 6;
+  println a.x
+end

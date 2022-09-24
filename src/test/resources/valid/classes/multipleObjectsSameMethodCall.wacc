@@ -1,0 +1,24 @@
+# multiple objects can call the same method
+
+# Output:
+# 15
+# 42
+
+# Program:
+
+begin
+  class Object begin
+    public int x;
+    public int getX() is
+      return x
+    end
+  end
+  Object o1 = new Object();
+  Object o2 = new Object();
+  o1.x = 15;
+  o2.x = 42;
+  int o1x = call o1.getX();
+  int o2x = call o2.getX();
+  println o1x;
+  println o2x
+end

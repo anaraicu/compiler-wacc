@@ -1,0 +1,22 @@
+# simple do-while loop
+
+# Output: 
+# 1 
+# 2 
+# 3
+# 4
+
+# Program:
+
+begin
+  int i = 1; 
+  do
+    int j = 0;
+    do 
+      j = j + 1
+    while j < i done ;
+    println j; 
+    i = i + 1 
+  while i <= 3 done ; 
+  println i
+end

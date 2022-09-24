@@ -1,0 +1,19 @@
+# declaring multiple objects from the same class
+# but declaring just one of them
+
+# Output:
+# 5
+# 15
+
+# Program:
+
+begin
+  class Object begin
+    public int x = 5;
+  end
+  Object a = new Object();
+  Object b = new Object();
+  b.x = 15;
+  println a.x;
+  println b.x
+end

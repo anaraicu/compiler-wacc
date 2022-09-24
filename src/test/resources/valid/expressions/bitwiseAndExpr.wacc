@@ -1,0 +1,14 @@
+# evaluating bitwise and
+
+# Output:
+# 2
+# 2
+
+# Program:
+
+begin
+  int a = 3 ;
+  int b = 6 ;
+  println a & b;
+  println b & a
+end

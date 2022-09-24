@@ -1,0 +1,5 @@
+#!/usr/bin/ruby
+# Ruby front_end for your compiler.
+
+system("mvn -q exec:java -Dexec.args=\"#{ARGV[1]} #{ARGV[0]}\"")
+exit $?.exitstatus

@@ -1,0 +1,23 @@
+# method uses variable declared in program
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  class A begin
+    private int x = 2;
+    public int sum(int a, int b) is
+        int y = z;
+        return a + b 
+    end
+  end
+  A a = new A();
+  int z = 2;
+  int y = call a.sum(1,3);
+  println y
+end

@@ -1,0 +1,15 @@
+# do-while should have boolean condition
+
+# Output:
+# #empty#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  do
+    skip
+  while 1 + 2 done
+end

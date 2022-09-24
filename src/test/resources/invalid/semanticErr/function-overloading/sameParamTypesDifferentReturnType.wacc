@@ -1,0 +1,17 @@
+# Output:
+# Sematic error, redefinition
+
+# Program:
+
+begin
+  int f(int x) is
+    return x
+  end
+
+  char f(int x) is
+    return x
+  end
+
+  int x = call f(1)
+end
+

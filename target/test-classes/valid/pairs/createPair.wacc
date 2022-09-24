@@ -1,0 +1,20 @@
+# create a pair (int, int)
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  pair(int, int) p = newpair(10, 3);
+  
+  # Added manual print for pair
+  print p;
+  print " = (" ;
+  int x = fst p ;
+  print x ;
+  print ", " ;
+  int c = snd p ;
+  print c ;
+  println ')' 
+end

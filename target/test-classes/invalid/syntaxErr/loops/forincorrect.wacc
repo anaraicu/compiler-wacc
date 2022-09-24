@@ -1,0 +1,15 @@
+# for must have 3 arguments
+
+# Output:
+# #syntax_error#
+
+# Exit:
+# 100
+
+# Program:
+
+begin
+  for (char i = 0; i < 1; i = 2; int j = 0 ) 
+    println i
+  done
+end

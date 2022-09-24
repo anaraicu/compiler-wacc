@@ -1,0 +1,15 @@
+# evaluating bitwise or
+
+# Output:
+# 
+# 17
+# 17
+
+# Program:
+
+begin
+  int a = 23 ;
+  int b = 6 ;
+  println a ^ b;
+  println b ^ a
+end

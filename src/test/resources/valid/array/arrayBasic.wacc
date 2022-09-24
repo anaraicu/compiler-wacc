@@ -1,0 +1,12 @@
+# basic array declaration and assignment
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  int[] a = [0];
+  println a[0]
+end
+

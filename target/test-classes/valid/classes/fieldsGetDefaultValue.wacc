@@ -1,0 +1,27 @@
+# default values of an undeclared class field should be 
+# 0 for int
+# \u0000 for char
+# false for bool
+# empty string for string
+
+# Output:
+# 0
+# \u0000
+# false
+# 
+
+# Program:
+
+begin
+  class Object begin
+    public int i;
+    public char c;
+    public bool b;
+    public string s;
+  end
+  Object a = new Object();
+  println a.i;
+  println a.c;
+  println a.b;
+  println a.s
+end

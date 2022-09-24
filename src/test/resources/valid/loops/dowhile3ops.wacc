@@ -1,0 +1,14 @@
+# simple do-while loop
+
+# Output: increment 1 for 3 times 
+# 4
+
+# Program:
+
+begin
+  int i = 1; 
+  do
+    i = i + 1
+  while i <= 3 done ; 
+  println i
+end

@@ -1,0 +1,14 @@
+# accessing the default field of a class
+
+# Output:
+# 5
+
+# Program:
+
+begin
+  class Object begin
+    public int x = 5;
+  end
+  Object a = new Object();
+  println a.x
+end

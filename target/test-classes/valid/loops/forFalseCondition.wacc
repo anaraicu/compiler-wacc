@@ -1,0 +1,13 @@
+# never enters the loop
+
+# Output:
+# 0
+
+# Program:
+
+begin
+  for ( int i = 0; false; i = i + 1) 
+    println "should not get here if optimizations are turned on"
+  done;
+  println "for loop skipped"
+end

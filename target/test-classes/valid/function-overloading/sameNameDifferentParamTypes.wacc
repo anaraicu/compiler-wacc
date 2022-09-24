@@ -1,0 +1,21 @@
+# Output:
+# 1
+# a
+
+# Program:
+
+begin
+  int f(int x) is
+    return x
+  end
+
+  char f(char x) is
+    return x
+  end
+
+  int x = call f(1);
+  char c = call f('a');
+  println x;
+  println c
+end
+

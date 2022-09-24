@@ -1,0 +1,21 @@
+# tries to call private method
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  class A begin
+    private int x = 2;
+    private int sum(int a, int b) is
+        return a + b + x
+    end
+  end
+  A a = new A();
+  int y = call a.sum(1,3);
+  println y
+end

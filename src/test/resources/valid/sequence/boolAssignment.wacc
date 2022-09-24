@@ -1,0 +1,12 @@
+# simple boolean variable declaration and assignment
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  bool b = false ;
+  b = true ;
+  println b
+end

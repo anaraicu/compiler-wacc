@@ -1,0 +1,13 @@
+# simple string variable declaration and assignment
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  string s = "foo" ;
+  println s ;
+  s = "bar" ;
+  println s
+end

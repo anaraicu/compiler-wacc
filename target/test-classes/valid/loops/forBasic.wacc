@@ -1,0 +1,12 @@
+# simple for loop
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  for ( int i = 0; i < 0; i = 2) 
+    println i
+  done 
+end

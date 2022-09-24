@@ -1,0 +1,14 @@
+# simple do-while loop that executes only once
+
+# Output: 
+# 2
+
+# Program:
+
+begin
+  int i = 1; 
+  do
+    i = i + 1
+  while false done ; 
+  println i
+end

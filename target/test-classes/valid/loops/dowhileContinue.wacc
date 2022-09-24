@@ -1,0 +1,25 @@
+# do-while loop continue
+# prints all the odd number from 1 to 6 
+
+# Output: 
+# 1
+# odd
+# 3
+# odd
+# 5
+# odd
+
+# Program:
+
+begin
+  int i = 0; 
+  do
+    i = i + 1;
+    if i % 2 == 0 then 
+      continue
+    else 
+      println i 
+    fi ; 
+    println "odd"
+  while i < 6 done 
+end

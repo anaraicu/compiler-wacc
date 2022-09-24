@@ -1,0 +1,26 @@
+# basic getter and setter methods for a private field
+
+# Output:
+# 5
+# 42
+
+# Program:
+
+begin
+  class Object begin
+    private int x = 5;
+    public int getX() is
+      return x
+    end
+    public bool setX(int y) is
+      x = y;
+      return true
+    end
+  end
+  Object a = new Object();
+  int defaultField = call a.getX();
+  println defaultField;
+  bool setted = call a.setX(42);
+  int updatedField = call a.getX();
+  println updatedField
+end

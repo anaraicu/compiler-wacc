@@ -1,0 +1,17 @@
+# simple if statement
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  if true 
+  then
+    println("here");
+    skip
+  else
+    skip
+  fi
+end
+

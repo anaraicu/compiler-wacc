@@ -1,0 +1,20 @@
+# create a pair (int, char)
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  pair(int, char) p = newpair(10, 'a');
+
+  # Added manual print for pair
+  print p;
+  print " = (" ;
+  int x = fst p ;
+  print x ;
+  print ", " ;
+  char c = snd p ;
+  print c ;
+  println ')' 
+end

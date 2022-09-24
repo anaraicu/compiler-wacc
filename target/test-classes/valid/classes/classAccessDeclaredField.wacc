@@ -1,0 +1,15 @@
+# accessing the field of a class
+
+# Output:
+# 6
+
+# Program:
+
+begin
+  class Object begin
+    public int x;
+  end
+  Object a = new Object();
+  a.x = 6;
+  println a.x
+end

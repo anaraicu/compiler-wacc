@@ -1,0 +1,13 @@
+# iterates through the loop once 
+
+# Output:
+# 0
+
+# Program:
+
+begin
+  for ( int i = 0; i < 2; i = i + 1) 
+    println i; 
+    break
+  done 
+end

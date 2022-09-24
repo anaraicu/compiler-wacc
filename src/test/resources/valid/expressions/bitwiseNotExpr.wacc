@@ -1,0 +1,14 @@
+# evaluating bitwise not 
+
+# Output:
+# -5
+# -14
+
+# Program:
+
+begin
+  int a = 4 ;
+  int b = 13 ;
+  println ~a ;
+  println ~b 
+end

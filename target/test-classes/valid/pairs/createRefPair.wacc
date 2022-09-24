@@ -1,0 +1,31 @@
+# create a pair(int, char) with a second reference to it
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  pair(int, char) p = newpair(10, 'a') ;
+  pair(int, char) q = p;
+
+  # Added manual print for pair
+  print p;
+  print " = (" ;
+  int x = fst p ;
+  print x ;
+  print ", " ;
+  char c = snd p ;
+  print c ;
+  println ')';
+
+  # Added manual print for pair
+  print q;
+  print " = (" ;
+  x = fst q ;
+  print x ;
+  print ", " ;
+  c = snd q ;
+  print c ;
+  println ')' 
+end

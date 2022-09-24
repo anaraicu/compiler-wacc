@@ -1,0 +1,32 @@
+# basic getter and setter methods for a private field
+
+# Output:
+# 55
+
+# Program:
+
+begin
+  class Object begin
+    public int x;
+    public bool setFibonacci() is
+      x = call_m fibonacci(x);
+      return true
+    end
+    private int fibonacci(int n) is
+      int f0 = 0 ;
+      int f1 = 1 ;
+      int save = 0;
+      while n > 0 do
+        save = f0 ;
+        f0 = f1 ;
+        f1 = save + f1 ;
+        n = n - 1
+      done ;
+      return f0
+    end
+  end
+  Object a = new Object();
+  a.x = 10;
+  bool success = call a.setFibonacci();
+  println a.x
+end

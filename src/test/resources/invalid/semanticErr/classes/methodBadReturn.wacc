@@ -1,0 +1,22 @@
+# method has no return
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  class A begin
+    private int x;
+    public bool y = false;
+    public int getY() is
+      return y
+    end
+  end
+  A a = new A();
+  bool y = call a.getY();
+  println y
+end

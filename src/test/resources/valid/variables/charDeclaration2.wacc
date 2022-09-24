@@ -1,0 +1,11 @@
+# simple character variable declaration
+
+# Output:
+# #empty#
+
+# Program:
+
+begin
+  char c = 'z';
+  println c
+end

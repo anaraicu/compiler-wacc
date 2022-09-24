@@ -1,0 +1,11 @@
+# print pair a null pair
+
+# Output:
+# (nil)
+
+# Program:
+
+begin
+  pair(pair(int,int), pair(int,int)) p = null ;
+  println p
+end

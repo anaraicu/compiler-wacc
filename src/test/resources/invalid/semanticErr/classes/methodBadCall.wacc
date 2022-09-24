@@ -1,0 +1,21 @@
+# assigns bad type to method call
+
+# Output:
+# #semantic_error#
+
+# Exit:
+# 200
+
+# Program:
+
+begin
+  class A begin
+    private int x = 2;
+    public int sum(int a, int b) is
+        return a + b + x
+    end
+  end
+  A a = new A();
+  bool y = call a.sum(1,3);
+  println y
+end

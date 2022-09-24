@@ -1,0 +1,23 @@
+# verifies if stack pointer is updated accordingly
+
+# Output: 
+#
+#
+#
+
+# Program:
+
+begin 
+  int z = 1;
+  for (int i = 0; i < 5; i = i + 1)
+    int x = i ;
+    if i == 2 then 
+      int y = x*x ;
+      println y;
+      break
+    else 
+      continue
+    fi
+  done; 
+  println z
+end 
